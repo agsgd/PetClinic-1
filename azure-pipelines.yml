@@ -10,7 +10,7 @@ stages:
     jobs:
       - job: buildjob
         steps:
-          - bash: ls - R $(System.DefaultWorkingDirectory)
+          - bash: ls -R $(System.DefaultWorkingDirectory)
           - task: Maven@3
             inputs:
               mavenPomFile: 'pom.xml'
